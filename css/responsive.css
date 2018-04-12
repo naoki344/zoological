@@ -1,0 +1,119 @@
+﻿@charset "utf-8";
+/* 	#graphic	.grahic
+	#contents	.contents
+	nav 		.nav-global
+ */
+@media screen and (max-width: 480px) {
+
+    header, nav, .graphic, .contents, footer, {
+        width: 451px;
+    }
+    header{
+        width: 451px;
+    }
+    .nav-global ul{
+        width: 451px;
+    }
+    .contents {
+        display: block; /*mark*/
+    }
+
+    /*nav ul {*/
+    nav ul {
+        margin: 0;
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    .graphic {
+        height: 160px;
+        padding-top: 10px;
+    }
+
+    .graphic ul li img {
+        width: 447px;
+    }
+
+    /*#main, .news ul li, h2 {*/
+    main, .news ul li, h2 {
+        width: auto;
+    }
+    .nav-global ul {
+        flex-wrap: wrap; /*mark*/
+    }
+    .nav-global ul li {
+        width: 225px; /*mark*/
+    }
+
+    .nav-global ul li:nth-child(n) {
+        border: 1px solid #f3f2e9;
+        border-top: none;
+        border-left: none;
+    }
+
+    .nav-global ul li:nth-child(2n) {
+        border: 1px solid #f3f2e9;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+    }
+
+    .nav-global ul li a {
+        height: auto;
+        margin-bottom: 0px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        background-image: none !important;
+        background-color: #84e19d;
+        color: #6e4c39;
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .nav-global ul li a:hover {
+        background-color: #fc6469;
+        color: #ffffff;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .news h2 {
+        margin-bottom: 0;
+        background-image: none;
+        background-color: #fb484e;
+    }
+
+    .news ul li {
+        padding: 20px 0 12px 0;
+        text-indent: 0;
+    }
+
+    .news ul li time {
+        display: block;
+        margin-bottom: 10px;
+        width: auto;
+    }
+
+    .contents-sub {
+        margin-left: 10px;
+        float: none;
+    }
+
+    footer {
+        width: 451px;
+        padding-top: 30px;
+    }
+
+    footer p {
+        float: none;
+    }
+
+
+    footer address {
+        width: 452px;
+        padding: 0;
+    }
+}
