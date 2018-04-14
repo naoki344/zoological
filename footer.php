@@ -8,6 +8,7 @@
     <small>
         Copyright 2014 ZOO LOGICAL All right reserved.
     </small>
+	<a></a>
 </footer>
 <?php wp_footer(); ?>
 </body>
