@@ -8,6 +8,13 @@ function theme_setup(){
         'second_menu' => 'Second Menu',
         'pan' => 'パンくずリスト'
    ) );
+		$custom_header_defaults = array(
+		    'default-image'          => get_template_directory_uri() .'/images/logo.png"',
+		    'width'                  => 244,
+		    'height'                 => 76,
+		    'header-text'            => false,	//ヘッダー画像上にテキストをかぶせる
+		);
+		add_theme_support( 'custom-header', $custom_header_defaults );
 }
 add_action( 'after_setup_theme', 'theme_setup' );
 
@@ -34,10 +41,3 @@ function theme_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
-$custom_header_defaults = array(
-    'default-image'          => get_template_directory_uri() .'/images/logo.png"',
-    'width'                  => 244,
-    'height'                 => 76,
-    'header-text'            => false,	//ヘッダー画像上にテキストをかぶせる
-);
-add_theme_support( 'custom-header', $custom_header_defaults );
