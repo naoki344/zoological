@@ -99,12 +99,12 @@
 
             if (len > 1) {
                 var setId = setInterval(slideShow, settings.slideSpeed, objLi,len);
+                console.log(settings.slideSpeed)
             }
 
         });
         function slideShow(objLi,len) {
             objLi.eq(settings.now).fadeOut(settings.fadeSpeed);
-
             settings.now = settings.now + 1;
             if (settings.now >= len) {
                 settings.now = 0;

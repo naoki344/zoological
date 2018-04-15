@@ -14,7 +14,11 @@
 
 <body>
 <header>
-    <h1><a href="<?php echo home_url(); ?>"><img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="ZOO LOGICAL"/></a></h1>
+    <h1>
+        <a href="<?php echo home_url(); ?>">
+            <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="ZOO LOGICAL"/>
+        </a>
+    </h1>
 
 
 
@@ -27,6 +31,12 @@
     ?>
 </nav>
 <?php endif; ?>
-
+    <nav class="nav-breadcrumb">
+    <?php
+    if ( shortcode_exists( 'wp-structuring-markup-breadcrumb' ) ) {
+        echo do_shortcode( '[wp-structuring-markup-breadcrumb id="id-name" class="class-name"]' );
+    }
+    ?>
+    </nav>
 </header>
 
